@@ -18,7 +18,7 @@ public class ExtratoUtilizacaoDadosFactory {
 		load();
 	}
 
-	public static List<ExtratoUtilizacaoDadosDto> load() {
+	public static List<ListaExtratos> load() {
 		List<ExtratoUtilizacaoDadosDto> list = new ArrayList<ExtratoUtilizacaoDadosDto>();
 		
 		ExtratoUtilizacaoDadosDto extrato = new ExtratoUtilizacaoDadosDto();
@@ -34,6 +34,9 @@ public class ExtratoUtilizacaoDadosFactory {
 		extrato.setCategoriaDespesas(criarListaCategoriaDespesas());
 
 		list.add(extrato);
+		
+		
+		
 		
 		return list;
 	}
